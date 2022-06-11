@@ -16,5 +16,14 @@ window.onload = function() {
     "when I finished",
     "during my lunch",
     "while I was praying"
-document.querySelector("p").innerHTML= who[1] +""+  when[3]];
+  ];
+
+  var ranwho = Math.floor(Math.random(who) * who.length);
+  var ranact = Math.floor(Math.random(action) * action.length);
+  var ranwhat = Math.floor(Math.random(what) * what.length);
+  var ranwhen = Math.floor(Math.random(when) * when.length);
+
+  var random = ranwho + " " + ranact + " " + ranwhat + " " + ranwhen;
+
+  var frase = (document.querySelector("p").innerHTML = random);
 };
