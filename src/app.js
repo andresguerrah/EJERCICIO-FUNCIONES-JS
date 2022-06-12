@@ -18,10 +18,10 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  var ranwho = Math.floor(Math.random(who) * who.length);
-  var ranact = Math.floor(Math.random(action) * action.length);
-  var ranwhat = Math.floor(Math.random(what) * what.length);
-  var ranwhen = Math.floor(Math.random(when) * when.length);
+  const ranwho = who[Math.floor(Math.random() * who.length)];
+  const ranact = action[Math.floor(Math.random() * action.length)];
+  const ranwhat = what[Math.floor(Math.random() * what.length)];
+  const ranwhen = when[Math.floor(Math.random() * when.length)];
 
   var random = ranwho + " " + ranact + " " + ranwhat + " " + ranwhen;
 
